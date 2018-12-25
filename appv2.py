@@ -29,8 +29,8 @@ sp_oauth = oauth2.SpotifyOAuth( SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET,SPOTIPY
 def index():
 
     access_token = ""
-
-    token_info =sp_oauth.get_cached_token()
+    #You can change the value of token_info with "sp_oauth.get_cached_token()" if you want to work locally with cached value
+    token_info =0
 
     if token_info:
         print ("Found cached token!")
