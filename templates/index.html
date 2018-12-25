@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Moodify</title>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Material Design Bootstrap</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap core CSS -->
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="../css/mdb.min.css" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link href="../css/style.css" rel="stylesheet">
+
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+
+    <style type="text/css">
+      #login, #loggedin {
+        display: none;
+      }
+      .text-overflow {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+        <div>
+        <p>
+          <i style="font-size:11px">This is a group hack project for BİM444 course and it is on Spotify's public APIs and SDKs and does not represent Spotify.</i>
+        </p>
+        <div class="alarm alarm-info" role="alarm">WELCOME to MOODIFY   <i class="fas fa-play"></i></div>
+        <div id="notice"></div>
+
+      <div class="body">
+      <div class="media">
+          <span >
+              <h3>Make Playlist according to your mood. Select Your mood below </h3
+          </span>
+
+      </div>
+      <br>
+      <br>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                      <img  class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                      <!-- Label -->
+                      <h5 class="pink-text pb-2 pt-1"><i class="fas fa-smile-beam"></i>Happy</h5>
+                      <!-- Title -->
+                      <h4 class="font-weight-bold card-title">Here Comes the sun</h4>
+                      <!-- Text -->
+                      <!-- Button -->
+                      <form action="/happy" method="post">
+                        <button type="submit" class="btn btn-warning">Generate Playlist</button>
+                      </form>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                      <img  class="card-img-top" src="https://images.unsplash.com/photo-1534276866337-55723bdee569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Card image cap">
+                      <a>
+                        <div class="mask rgba-white-slight"></div>
+                      </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                      <!-- Label -->
+                      <h5 class="pink-text pb-2 pt-1"><i class="fas fa-sun"></i> Relax</h5>
+                      <!-- Title -->
+                      <h4 class="font-weight-bold card-title">One more cup of coffee for the road</h4>
+                      <!-- Text -->
+
+                      <!-- Button -->
+                      <form action="/relax" method="post">
+                        <button type="submit" class="btn btn-info">Generate Playlist</button>
+                      </form>
+                    </div>
+
+                  </div>
+            </div>
+
+          </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                  <div class="card card-cascade narrower">
+
+                      <!-- Card image -->
+                      <div class="view view-cascade overlay">
+                        <img  class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg" alt="Card image cap">
+                        <a>
+                          <div class="mask rgba-white-slight"></div>
+                        </a>
+                      </div>
+
+                      <!-- Card content -->
+                      <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fas fa-frown"></i> Sad</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Yesterday.. All my troubles seemed so far away</h4>
+                        <!-- Text -->
+
+                        <!-- Button -->
+                        <form action="/sad" method="post">
+                          <button type="submit" class="btn btn-blue-grey">Generate Playlist</button>
+                        </form>
+                      </div>
+
+                    </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card card-cascade narrower">
+
+                      <!-- Card image -->
+                      <div class="view view-cascade overlay">
+                        <img  class="card-img-top" src="https://images.unsplash.com/photo-1529113895-5bf708eb6e46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+                        <a>
+                          <div class="mask rgba-white-slight"></div>
+                        </a>
+                      </div>
+
+                      <!-- Card content -->
+                      <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fas fa-angry"></i> Angry</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Hey, teacher, leave them kids alone!!</h4>
+                        <!-- Text -->
+
+                        <!-- Button -->
+                        <form action="/angry" method="post">
+                          <button type="submit" class="btn btn-danger">Generate Playlist</button>
+                        </form>
+                      </div>
+
+                    </div>
+              </div>
+
+            </div>
+          </div>
+</div>
+  </body>
+</html>
