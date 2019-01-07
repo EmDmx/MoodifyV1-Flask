@@ -13,8 +13,8 @@ app=Flask(__name__)
 
 # Necessary Credential Variables
 
-SPOTIPY_CLIENT_ID = '8f59c1d7b888421dad3742ce6ee176eb'
-SPOTIPY_CLIENT_SECRET = '9a65c3efaafc4cfbb910d5f892f105c7'
+SPOTIPY_CLIENT_ID = 'YOUR ID'
+SPOTIPY_CLIENT_SECRET = 'YOUR SECRET'
 SPOTIPY_REDIRECT_URI = 'http://localhost:8080'
 SCOPE = "user-top-read"
 CACHE = 'spotipyoauthcache'
