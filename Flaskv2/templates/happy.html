@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="static/css/styleemo.css" rel="stylesheet">
+    <title>Happy</title>
+  </head>
+  <body>
+    <h1 style="font-family:Courier; color:Black;">Here is your happy playlist</h1>
+
+    <div >
+      {% for key,value in happyDict.items()%}
+        <ul>
+          <a href={{value}} target="_parent"><button class="button happy">{{key}}</button></a>
+        </ul>
+      {%endfor%}
+    </div>
+  </body>
+</html>
