@@ -14,12 +14,14 @@ you should update "SPOTIPY_REDIRECT_URI = 'http://localhost:8080'" part in appv2
 These changes should be made according to your own configuration. 
 # To get better GUI try MOODIFY V2 version.
 
-# How it works ?
+
+
+## How it works  ?
 
 # Data Structure
 1) User’s top track data: Firstly, it gathers the id’s of user’s 50 most listened tracks  through  Spotify API. Then, it also gather the features of those 50 tracks and put them into a pandas dataframe. With doing this it gathers the feature data of top 50 songs. 
 
-2)User’s top artist data: Secondly, it gathers the Spotify id’s of most listened artists by the user through Spotify API. Then, it gathers the id’s of most listened songs from the user’s most listened artists. Lastly, it gathers the features of those most famous songs of artist’s. Approximately, it gathers feature data around 400-500 songs in this process.
+2) User’s top artist data: Secondly, it gathers the Spotify id’s of most listened artists by the user through Spotify API. Then, it gathers the id’s of most listened songs from the user’s most listened artists. Lastly, it gathers the features of those most famous songs of artist’s. Approximately, it gathers feature data around 400-500 songs in this process.
 
 3) Song’s that User doesn’t like: it gathers this data by using the opposite feature values user’s top listened tracks. It will be explained more in methodology part. 
 
