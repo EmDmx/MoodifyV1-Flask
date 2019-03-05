@@ -12,13 +12,11 @@ After you do everything in installation part correct, you can use it by just run
 If you would like to use project in your server (which is different than localhost)
 you should update "SPOTIPY_REDIRECT_URI = 'http://localhost:8080'" part in appv2.py and also " app.run( port=8080)" in the last function. 
 These changes should be made according to your own configuration. 
-# To get better GUI try MOODIFY V2 version.
+## To get better GUI try MOODIFY V2 version.
 
+# How it works  ?
 
-
-## How it works  ?
-
-# Data Structure
+## Data Structure
 1) User’s top track data: Firstly, it gathers the id’s of user’s 50 most listened tracks  through  Spotify API. Then, it also gather the features of those 50 tracks and put them into a pandas dataframe. With doing this it gathers the feature data of top 50 songs. 
 
 2) User’s top artist data: Secondly, it gathers the Spotify id’s of most listened artists by the user through Spotify API. Then, it gathers the id’s of most listened songs from the user’s most listened artists. Lastly, it gathers the features of those most famous songs of artist’s. Approximately, it gathers feature data around 400-500 songs in this process.
@@ -27,7 +25,7 @@ These changes should be made according to your own configuration.
 
 4) Emotion data: it gathers this data using the officially approved playlists which responds to certain type of emotion. It gathers the id’s of the songs in certain playlist. Then, it  gathers the features of those songs in playlist. For this part, approximately it gathers data feature for 80-120 songs. 
 
-# Methodology
+## Methodology
 
 As mentioned in the data part, it gathers data of the songs that user doesn’t like by gathering the songs which have opposite feature values.
  
@@ -37,12 +35,12 @@ To get the user’s general listening taste in features, it queries the top list
 
 For instance, if we got 45 top listened song’s from the user’s most listened data. Then, it multiplies the feature values of most listened song with 45. Following this formula we multiply the last song’s value with 1. 
 
-# Weighted Sum of Features
+## Weighted Sum of Features
 Then, we get the mean of this feature values with using the formula: 
 
 SUM of All Feature Values / ((N*(N+1))/2)
 
-# Machine Learning 
+## Machine Learning 
 After the gathering of all data, it puts this data into a learning algorithm with using sklearn library of python. 
 
 It separates the data as test and training data. Size of the test data is 0.15 to reach better accuracy. 
