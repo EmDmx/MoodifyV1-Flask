@@ -1,0 +1,46 @@
+body  {
+    background-image: url(img/abstractColor.jpg);
+  }
+
+
+h1{
+  font-family: Verdana,Geneva,sans-serif;
+
+}
+
+.button{
+
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 30%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+
+}
+
+
+  .happy  {
+    background-color: rgb(216, 187, 106); /* Green */
+
+  }
+  .sad  {
+    background-color: rgb(63, 55, 32); /* Green */
+
+  }
+  .angry  {
+    background-color: rgb(196, 17, 11); /* Green */
+
+  }
+  .relax  {
+    background-color: rgb(99, 105, 177); /* Green */
+
+  }

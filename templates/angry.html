@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Angry</title>
+  </head>
+  <body>
+  <div>
+    {% for key,value in angryDict.items()%}
+      <ul>
+        <a href={{value}}>{{key}}</a>
+      </ul>
+    {%endfor%}
+  </div>
+  </body>
+</html>

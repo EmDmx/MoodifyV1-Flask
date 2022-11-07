@@ -1,12 +1,3 @@
-# SORRY FOR INCONVENIENCE
-
-I coded this project when I was not coding properly.
-I felt bad when I see the codes and I really like this project. 
-Just decided to remove everything for now and refactor it as a whole. 
-Project will be better after this refactorization. 
-So all the codes will be back soon and maybe I can make some improvements on the algorithm too.
-Thank you :) 
-
 # Moodify
 Moodify is a web application which recommends Songs for User depending on Choosen Mood! 
 

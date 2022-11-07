@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Happy</title>
+  </head>
+  <body>
+  <div>
+    {% for key,value in happyDict.items()%}
+      <ul>
+        <a href={{value}}>{{key}}</a>
+      </ul>
+    {%endfor%}
+  </div>
+  </body>
+</html>
