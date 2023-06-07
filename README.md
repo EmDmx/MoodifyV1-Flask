@@ -1,5 +1,5 @@
-# Moodify
-Moodify is a web application which recommends Songs for User depending on Choosen Mood! 
+# MusicMood
+MusicMood is a web application which recommends Songs for User depending on Choosen Mood! 
 
 # Installation
 To use the project completely you need software modules in requirements txt. Then, you can upload it to your own server. 
@@ -12,7 +12,7 @@ After you do everything in installation part correct, you can use it by just run
 If you would like to use project in your server (which is different than localhost)
 you should update "SPOTIPY_REDIRECT_URI = 'http://localhost:8080'" part in appv2.py and also " app.run( port=8080)" in the last function. 
 These changes should be made according to your own configuration. 
-## To get better GUI try MOODIFY V2 version.
+## To get better GUI try MusicMood V2 version.
 
 # How it works  ?
 
